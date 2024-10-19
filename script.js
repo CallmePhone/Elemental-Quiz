@@ -18,8 +18,8 @@ async function loadElements() {
         const response = await fetch('elements.json');
         if (!response.ok) throw new Error('Network response was not ok');
         elements = await response.json();
-        console.log('โหลดข้อมูลธาตุเสร็จสิ้น:', elements);
-        alert('โหลดข้อมูลธาตุเสร็จสิ้น!');
+        // console.log('โหลดข้อมูลธาตุเสร็จสิ้น:', elements);
+        // alert('โหลดข้อมูลธาตุเสร็จสิ้น!');
         updateElement();
     } catch (error) {
         console.error('Error loading elements:', error);
