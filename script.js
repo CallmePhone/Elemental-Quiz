@@ -14,7 +14,7 @@ function getRandomColor() {
 
 async function loadElements() {
     try {
-        console.log('เริ่มโหลดข้อมูลธาตุ');
+        // console.log('เริ่มโหลดข้อมูลธาตุ');
         const response = await fetch('elements.json');
         if (!response.ok) throw new Error('Network response was not ok');
         elements = await response.json();
